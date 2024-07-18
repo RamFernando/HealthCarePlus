@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace OOP_Project___Hospital_Management_System
         public DashBoard()
         {
             InitializeComponent();
+
         }
 
         public string ID { get; set; }
@@ -148,6 +150,11 @@ namespace OOP_Project___Hospital_Management_System
         private void panelHead_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

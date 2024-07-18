@@ -106,7 +106,7 @@ namespace OOP_Project___Hospital_Management_System
         {
             textBoxInpatientID.Text = dataGridViewINP.Rows[e.RowIndex].Cells[0].Value.ToString();
             comboBoxPatient.SelectedValue = dataGridViewINP.Rows[e.RowIndex].Cells[1].Value.ToString();
-            comboBoxPatient.SelectedText = dataGridViewINP.Rows[e.RowIndex].Cells[2].Value.ToString();
+            //comboBoxPatient.SelectedText = dataGridViewINP.Rows[e.RowIndex].Cells[2].Value.ToString();
             //textBoxPhone.Text = dataGridViewINP.Rows[e.RowIndex].Cells[3].Value.ToString();
             dateTimePickerDOA.Value = Convert.ToDateTime(dataGridViewINP.Rows[e.RowIndex].Cells[4].Value);
             dateTimePickerDOD.Value = Convert.ToDateTime(dataGridViewINP.Rows[e.RowIndex].Cells[5].Value);
@@ -136,11 +136,7 @@ namespace OOP_Project___Hospital_Management_System
             display();
         }
 
-        private void dataGridViewINP_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

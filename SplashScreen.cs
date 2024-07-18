@@ -38,5 +38,10 @@ namespace OOP_Project___Hospital_Management_System
             //hide this form
             this.Hide();
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

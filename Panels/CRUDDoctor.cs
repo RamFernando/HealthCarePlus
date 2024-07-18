@@ -114,7 +114,6 @@ namespace OOP_Project___Hospital_Management_System
         {
             if (textBoxid.Text.Length != 0)
             {
-                DatabaseOps databaseOps = new DatabaseOps();
                 DatabaseOps db = new DatabaseOps();
                 //databaseOps.DeleteTimeSlots(DoctorID);
                 db.delete("DOCTORS", textBoxid.Text);

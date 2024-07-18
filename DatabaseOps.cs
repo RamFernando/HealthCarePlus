@@ -685,13 +685,13 @@ where APPOINTMENT.DOC_CODE = " + docid + "and CHECKUP_DATE ='" + DateTime.Now.To
             }
         }
 
-        public void DeleteTimeSlots(int id)
+        public void DeleteTimeSlots(string id)
         {
-            sqlConnection.Open();
+            //sqlConnection.Open();
             sqlCommand = new SqlCommand("DELETE FROM timeSlots WHERE slotdocid = @sdi", sqlConnection);
             sqlCommand.Parameters.AddWithValue("@sdi", id);
             sqlCommand.ExecuteNonQuery();
-            sqlConnection.Close();
+            //sqlConnection.Close();
         }
 
         public void delete(string tableValue, string id)
@@ -701,6 +701,7 @@ where APPOINTMENT.DOC_CODE = " + docid + "and CHECKUP_DATE ='" + DateTime.Now.To
                 sqlConnection.Open();
                 if (tableValue == "DOCTORS")
                 {
+                    DeleteTimeSlots(id);
                     sqlCommand = new SqlCommand("DELETE FROM " + tableValue + " WHERE DOC_ID = @DID",
                     sqlConnection);
                     sqlCommand.Parameters.AddWithValue("@DID", id);
@@ -1045,6 +1046,35 @@ where APPOINTMENT.DOC_CODE = " + docid + "and CHECKUP_DATE ='" + DateTime.Now.To
                 else
                 {
                     sqlDataAdapter = new SqlDataAdapter("SELECT PAT_ID, PAT_NAME, PAT_GENDER, PAT_TEL, PAT_EMAIL, PAT_ADDRESS FROM PATIENTS INNER JOIN APPOINTMENT ON APPOINTMENT.PAT_CODE =PATIENTS.ID  WHERE PAT_ID LIKE '%" + searchValue + "%' AND DOC_CODE=" + ID + "", sqlConnection);
+                }
+            }
+
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Error Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            sqlConnection.Close();
+            return dataTable;
+        }
+
+        public DataTable searchAppointment(string searchValue, string searchByValue)
+        {
+            try
+            {
+                sqlConnection.Open();
+                if (searchByValue.ToLower() == "patient name")
+                {
+                    sqlDataAdapter = new SqlDataAdapter("SELECT PAT_ID, PAT_NAME, PAT_GENDER, PAT_TEL, PAT_EMAIL, PAT_ADDRESS FROM PATIENTS INNER JOIN APPOINTMENT ON APPOINTMENT.PAT_CODE =PATIENTS.ID  where PAT_NAME LIKE '%" + searchValue + "%' ", sqlConnection);
+                }
+                else if (searchByValue.ToLower() == "patient number")
+                {
+                    sqlDataAdapter = new SqlDataAdapter("SELECT PAT_ID, PAT_NAME, PAT_GENDER, PAT_TEL, PAT_EMAIL, PAT_ADDRESS FROM PATIENTS INNER JOIN APPOINTMENT ON APPOINTMENT.PAT_CODE =PATIENTS.ID  WHERE PAT_TEL LIKE '%" + searchValue + "%'", sqlConnection);
+                }
+                else
+                {
+                    sqlDataAdapter = new SqlDataAdapter("SELECT PAT_ID, PAT_NAME, PAT_GENDER, PAT_TEL, PAT_EMAIL, PAT_ADDRESS FROM PATIENTS INNER JOIN APPOINTMENT ON APPOINTMENT.PAT_CODE =PATIENTS.ID  WHERE PAT_ID LIKE '%" + searchValue + "%' ", sqlConnection);
                 }
             }
 

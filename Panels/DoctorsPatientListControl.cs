@@ -34,8 +34,8 @@ namespace OOP_Project___Hospital_Management_System
 
         private void dataGridViewINP_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            textBoxInpatientID.Text = dataGridViewINP.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBoxPatientName.Text = dataGridViewINP.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBoxInpatientID.Text = dataGridViewINP.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBoxPatientName.Text = dataGridViewINP.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
 
         private void buttonPATDelete_Click(object sender, EventArgs e)
@@ -59,6 +59,11 @@ namespace OOP_Project___Hospital_Management_System
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridViewINP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

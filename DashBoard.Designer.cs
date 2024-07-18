@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.panelHead = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
             this.Content = new System.Windows.Forms.Panel();
@@ -40,13 +42,15 @@
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonSettings = new System.Windows.Forms.Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelHead.SuspendLayout();
             this.SideBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHead
             // 
-            this.panelHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.panelHead.BackColor = System.Drawing.Color.Teal;
+            this.panelHead.Controls.Add(this.button1);
             this.panelHead.Controls.Add(this.label1);
             this.panelHead.Controls.Add(this.buttonExit);
             this.panelHead.Dock = System.Windows.Forms.DockStyle.Top;
@@ -56,21 +60,35 @@
             this.panelHead.TabIndex = 1;
             this.panelHead.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHead_Paint);
             // 
+            // button1
+            // 
+            this.button1.AccessibleName = "minimizeBtn";
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1154, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 36);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label1.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(406, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 32);
+            this.label1.Size = new System.Drawing.Size(494, 34);
             this.label1.TabIndex = 9;
             this.label1.Text = "HOSPITAL MANAGEMENT SYSTEM";
             // 
             // buttonExit
             // 
             this.buttonExit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonExit.BackColor = System.Drawing.Color.Teal;
             this.buttonExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonExit.BackgroundImage")));
             this.buttonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonExit.FlatAppearance.BorderSize = 0;
@@ -95,7 +113,7 @@
             // 
             // SideBar
             // 
-            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.SideBar.BackColor = System.Drawing.Color.Teal;
             this.SideBar.Controls.Add(this.buttonPatient);
             this.SideBar.Controls.Add(this.buttonDoctor);
             this.SideBar.Controls.Add(this.buttonBed);
@@ -111,7 +129,7 @@
             // buttonPatient
             // 
             this.buttonPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonPatient.BackColor = System.Drawing.Color.Teal;
             this.buttonPatient.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPatient.BackgroundImage")));
             this.buttonPatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonPatient.FlatAppearance.BorderSize = 0;
@@ -128,7 +146,7 @@
             // buttonDoctor
             // 
             this.buttonDoctor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonDoctor.BackColor = System.Drawing.Color.Teal;
             this.buttonDoctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDoctor.FlatAppearance.BorderSize = 0;
             this.buttonDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -144,7 +162,7 @@
             // buttonBed
             // 
             this.buttonBed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonBed.BackColor = System.Drawing.Color.Teal;
             this.buttonBed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBed.BackgroundImage")));
             this.buttonBed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonBed.FlatAppearance.BorderSize = 0;
@@ -161,7 +179,7 @@
             // buttonHome
             // 
             this.buttonHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonHome.BackColor = System.Drawing.Color.Teal;
             this.buttonHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHome.BackgroundImage")));
             this.buttonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonHome.FlatAppearance.BorderSize = 0;
@@ -178,7 +196,7 @@
             // buttonLogout
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonLogout.BackColor = System.Drawing.Color.Teal;
             this.buttonLogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLogout.BackgroundImage")));
             this.buttonLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonLogout.FlatAppearance.BorderSize = 0;
@@ -195,7 +213,7 @@
             // buttonSettings
             // 
             this.buttonSettings.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonSettings.BackColor = System.Drawing.Color.Teal;
             this.buttonSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSettings.BackgroundImage")));
             this.buttonSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonSettings.FlatAppearance.BorderSize = 0;
@@ -209,8 +227,13 @@
             this.buttonSettings.UseVisualStyleBackColor = false;
             this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // DashBoard
             // 
+            this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1362, 689);
@@ -242,5 +265,7 @@
         private System.Windows.Forms.Button buttonPatient;
         private System.Windows.Forms.Button buttonDoctor;
         private System.Windows.Forms.Button buttonBed;
+        private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorsPatientListControl));
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -66,6 +68,7 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonInsert = new System.Windows.Forms.Button();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewINP)).BeginInit();
             this.Content.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -254,44 +257,70 @@
             // 
             // textBoxSearchValue
             // 
-            this.textBoxSearchValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxSearchValue.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxSearchValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSearchValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxSearchValue.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchValue.ForeColor = System.Drawing.Color.Black;
             this.textBoxSearchValue.Location = new System.Drawing.Point(1035, 92);
             this.textBoxSearchValue.Name = "textBoxSearchValue";
-            this.textBoxSearchValue.Size = new System.Drawing.Size(159, 27);
+            this.textBoxSearchValue.Size = new System.Drawing.Size(159, 28);
             this.textBoxSearchValue.TabIndex = 17;
             this.textBoxSearchValue.TextChanged += new System.EventHandler(this.textBoxSearchValue_TextChanged);
             // 
             // dataGridViewINP
             // 
+            this.dataGridViewINP.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewINP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewINP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewINP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewINP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewINP.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewINP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewINP.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridViewINP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewINP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewINP.ColumnHeadersHeight = 40;
-            this.dataGridViewINP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewINP.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewINP.EnableHeadersVisualStyles = false;
             this.dataGridViewINP.Location = new System.Drawing.Point(71, 132);
             this.dataGridViewINP.Name = "dataGridViewINP";
-            this.dataGridViewINP.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewINP.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewINP.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewINP.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewINP.RowHeadersWidth = 50;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewINP.RowTemplate.Height = 24;
+            this.dataGridViewINP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewINP.Size = new System.Drawing.Size(1123, 325);
             this.dataGridViewINP.TabIndex = 13;
+            this.dataGridViewINP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewINP_CellContentClick);
             this.dataGridViewINP.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewINP_RowHeaderMouseClick);
             // 
             // Content
@@ -330,7 +359,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.textBoxSearchValue);
             this.panel1.Controls.Add(this.dataGridViewINP);
             this.panel1.Controls.Add(this.comboBoxSearchBy);
@@ -353,9 +382,10 @@
             // 
             this.comboBoxSearchBy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxSearchBy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBoxSearchBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxSearchBy.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxSearchBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSearchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.comboBoxSearchBy.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSearchBy.ForeColor = System.Drawing.Color.Black;
             this.comboBoxSearchBy.FormattingEnabled = true;
             this.comboBoxSearchBy.Items.AddRange(new object[] {
             "Patient ID",
@@ -363,83 +393,85 @@
             "Patient Number"});
             this.comboBoxSearchBy.Location = new System.Drawing.Point(673, 86);
             this.comboBoxSearchBy.Name = "comboBoxSearchBy";
-            this.comboBoxSearchBy.Size = new System.Drawing.Size(136, 37);
+            this.comboBoxSearchBy.Size = new System.Drawing.Size(136, 36);
             this.comboBoxSearchBy.TabIndex = 3;
             // 
             // textBoxPatientName
             // 
-            this.textBoxPatientName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxPatientName.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxPatientName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPatientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxPatientName.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPatientName.ForeColor = System.Drawing.Color.Black;
             this.textBoxPatientName.Location = new System.Drawing.Point(673, 484);
             this.textBoxPatientName.Name = "textBoxPatientName";
             this.textBoxPatientName.ReadOnly = true;
-            this.textBoxPatientName.Size = new System.Drawing.Size(254, 27);
+            this.textBoxPatientName.Size = new System.Drawing.Size(254, 28);
             this.textBoxPatientName.TabIndex = 0;
             // 
             // textBoxInpatientID
             // 
-            this.textBoxInpatientID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxInpatientID.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxInpatientID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxInpatientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxInpatientID.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxInpatientID.ForeColor = System.Drawing.Color.Black;
             this.textBoxInpatientID.Location = new System.Drawing.Point(243, 92);
             this.textBoxInpatientID.Name = "textBoxInpatientID";
             this.textBoxInpatientID.ReadOnly = true;
-            this.textBoxInpatientID.Size = new System.Drawing.Size(254, 27);
+            this.textBoxInpatientID.Size = new System.Drawing.Size(254, 28);
             this.textBoxInpatientID.TabIndex = 0;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label17.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(515, 89);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(155, 29);
+            this.label17.Size = new System.Drawing.Size(136, 25);
             this.label17.TabIndex = 0;
             this.label17.Text = "SEARCH BY:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label10.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(443, 482);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(210, 29);
+            this.label10.Size = new System.Drawing.Size(172, 25);
             this.label10.TabIndex = 0;
             this.label10.Text = "PATIENT NAME:";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label18.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(831, 89);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(199, 29);
+            this.label18.Size = new System.Drawing.Size(178, 25);
             this.label18.TabIndex = 0;
             this.label18.Text = "SEARCH VALUE:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label19.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(67, 89);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(162, 29);
+            this.label19.Size = new System.Drawing.Size(136, 25);
             this.label19.TabIndex = 0;
             this.label19.Text = "PATIENT ID:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label20.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(19, 20);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(322, 46);
+            this.label20.Size = new System.Drawing.Size(269, 36);
             this.label20.TabIndex = 1;
             this.label20.Text = "PATIENTS LIST";
             // 
@@ -538,6 +570,21 @@
             this.buttonInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInsert.UseVisualStyleBackColor = false;
             // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // DoctorsPatientListControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -591,5 +638,6 @@
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.TextBox textBoxPatientName;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }

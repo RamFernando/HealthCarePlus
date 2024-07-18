@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorsAppointmentUserControl));
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxTel = new System.Windows.Forms.TextBox();
@@ -175,42 +178,72 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(1035, 92);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 27);
+            this.textBox1.Size = new System.Drawing.Size(159, 28);
             this.textBox1.TabIndex = 17;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridViewINP
             // 
+            this.dataGridViewINP.AllowUserToResizeRows = false;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewINP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewINP.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewINP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewINP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewINP.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewINP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewINP.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridViewINP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewINP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewINP.ColumnHeadersHeight = 40;
-            this.dataGridViewINP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewINP.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewINP.EnableHeadersVisualStyles = false;
             this.dataGridViewINP.Location = new System.Drawing.Point(46, 149);
             this.dataGridViewINP.Name = "dataGridViewINP";
-            this.dataGridViewINP.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewINP.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewINP.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewINP.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewINP.RowHeadersWidth = 50;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewINP.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridViewINP.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewINP.RowTemplate.Height = 24;
+            this.dataGridViewINP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewINP.Size = new System.Drawing.Size(1148, 318);
             this.dataGridViewINP.TabIndex = 13;
             this.dataGridViewINP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewINP_CellContentClick);
@@ -232,9 +265,9 @@
             // 
             this.comboBoxSearchBy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxSearchBy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBoxSearchBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxSearchBy.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxSearchBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSearchBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.comboBoxSearchBy.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSearchBy.FormattingEnabled = true;
             this.comboBoxSearchBy.Items.AddRange(new object[] {
             "Appointment Id",
@@ -244,15 +277,16 @@
             "Pat Number"});
             this.comboBoxSearchBy.Location = new System.Drawing.Point(673, 86);
             this.comboBoxSearchBy.Name = "comboBoxSearchBy";
-            this.comboBoxSearchBy.Size = new System.Drawing.Size(136, 37);
+            this.comboBoxSearchBy.Size = new System.Drawing.Size(136, 36);
             this.comboBoxSearchBy.TabIndex = 3;
             this.comboBoxSearchBy.SelectedIndexChanged += new System.EventHandler(this.comboBoxSearchBy_SelectedIndexChanged);
             // 
             // buttonCancelAppointment
             // 
-            this.buttonCancelAppointment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttonCancelAppointment.BackColor = System.Drawing.Color.Teal;
+            this.buttonCancelAppointment.FlatAppearance.BorderSize = 0;
             this.buttonCancelAppointment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonCancelAppointment.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancelAppointment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttonCancelAppointment.Image = ((System.Drawing.Image)(resources.GetObject("buttonCancelAppointment.Image")));
             this.buttonCancelAppointment.Location = new System.Drawing.Point(864, 559);
@@ -268,11 +302,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label15.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(45, 546);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 29);
+            this.label15.Size = new System.Drawing.Size(77, 28);
             this.label15.TabIndex = 0;
             this.label15.Text = "Date:";
             this.label15.Click += new System.EventHandler(this.label15_Click);
@@ -280,11 +314,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label11.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(45, 509);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 29);
+            this.label11.Size = new System.Drawing.Size(79, 28);
             this.label11.TabIndex = 0;
             this.label11.Text = "Slots:";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -292,35 +326,35 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label16.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(45, 585);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(130, 29);
+            this.label16.Size = new System.Drawing.Size(118, 28);
             this.label16.TabIndex = 0;
             this.label16.Text = "PATIENT:";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // textBoxAppointmentID
             // 
-            this.textBoxAppointmentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxAppointmentID.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxAppointmentID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxAppointmentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxAppointmentID.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAppointmentID.Location = new System.Drawing.Point(294, 92);
             this.textBoxAppointmentID.Name = "textBoxAppointmentID";
             this.textBoxAppointmentID.ReadOnly = true;
-            this.textBoxAppointmentID.Size = new System.Drawing.Size(203, 27);
+            this.textBoxAppointmentID.Size = new System.Drawing.Size(203, 28);
             this.textBoxAppointmentID.TabIndex = 0;
             this.textBoxAppointmentID.TextChanged += new System.EventHandler(this.textBoxAppointmentID_TextChanged);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label17.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(515, 89);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(155, 29);
+            this.label17.Size = new System.Drawing.Size(154, 28);
             this.label17.TabIndex = 0;
             this.label17.Text = "SEARCH BY:";
             this.label17.Click += new System.EventHandler(this.label17_Click);
@@ -340,11 +374,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label10.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(45, 473);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 29);
+            this.label10.Size = new System.Drawing.Size(121, 28);
             this.label10.TabIndex = 0;
             this.label10.Text = "DOCTOR:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -352,11 +386,11 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label18.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(831, 89);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(199, 29);
+            this.label18.Size = new System.Drawing.Size(202, 28);
             this.label18.TabIndex = 0;
             this.label18.Text = "SEARCH VALUE:";
             this.label18.Click += new System.EventHandler(this.label18_Click);
@@ -364,11 +398,11 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
-            this.label19.Location = new System.Drawing.Point(67, 89);
+            this.label19.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(49, 89);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(239, 29);
+            this.label19.Size = new System.Drawing.Size(226, 28);
             this.label19.TabIndex = 0;
             this.label19.Text = "APPOINTMENT ID:";
             this.label19.Click += new System.EventHandler(this.label19_Click);
@@ -446,11 +480,11 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label20.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(19, 20);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(347, 46);
+            this.label20.Size = new System.Drawing.Size(254, 36);
             this.label20.TabIndex = 1;
             this.label20.Text = "APPOINTMENTS";
             this.label20.Click += new System.EventHandler(this.label20_Click);
@@ -492,7 +526,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.comboBoxslots);
             this.panel1.Controls.Add(this.comboBoxpatient);
@@ -522,6 +556,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(221, 549);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -531,9 +566,9 @@
             // comboBoxslots
             // 
             this.comboBoxslots.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxslots.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxslots.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxslots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxslots.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.comboBoxslots.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxslots.FormattingEnabled = true;
             this.comboBoxslots.Items.AddRange(new object[] {
             "B",
@@ -544,28 +579,28 @@
             "4"});
             this.comboBoxslots.Location = new System.Drawing.Point(221, 510);
             this.comboBoxslots.Name = "comboBoxslots";
-            this.comboBoxslots.Size = new System.Drawing.Size(254, 39);
+            this.comboBoxslots.Size = new System.Drawing.Size(254, 36);
             this.comboBoxslots.TabIndex = 21;
             this.comboBoxslots.SelectedIndexChanged += new System.EventHandler(this.comboBoxslots_SelectedIndexChanged);
             // 
             // comboBoxpatient
             // 
-            this.comboBoxpatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxpatient.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxpatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxpatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBoxpatient.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxpatient.FormattingEnabled = true;
             this.comboBoxpatient.Location = new System.Drawing.Point(221, 585);
             this.comboBoxpatient.Name = "comboBoxpatient";
-            this.comboBoxpatient.Size = new System.Drawing.Size(254, 33);
+            this.comboBoxpatient.Size = new System.Drawing.Size(254, 36);
             this.comboBoxpatient.TabIndex = 20;
             this.comboBoxpatient.SelectedIndexChanged += new System.EventHandler(this.comboBoxpatient_SelectedIndexChanged);
             // 
             // comboBoxDoctor
             // 
             this.comboBoxDoctor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBoxDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxDoctor.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxDoctor.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.comboBoxDoctor.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDoctor.FormattingEnabled = true;
             this.comboBoxDoctor.Items.AddRange(new object[] {
             "B",
@@ -576,16 +611,17 @@
             "4"});
             this.comboBoxDoctor.Location = new System.Drawing.Point(221, 469);
             this.comboBoxDoctor.Name = "comboBoxDoctor";
-            this.comboBoxDoctor.Size = new System.Drawing.Size(254, 39);
+            this.comboBoxDoctor.Size = new System.Drawing.Size(254, 36);
             this.comboBoxDoctor.TabIndex = 19;
             this.comboBoxDoctor.SelectedIndexChanged += new System.EventHandler(this.comboBoxDoctor_SelectedIndexChanged);
             this.comboBoxDoctor.SelectionChangeCommitted += new System.EventHandler(this.comboBoxDoctor_SelectionChangeCommitted);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(864, 503);
@@ -600,9 +636,10 @@
             // 
             // buttonReschedule
             // 
-            this.buttonReschedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttonReschedule.BackColor = System.Drawing.Color.Teal;
+            this.buttonReschedule.FlatAppearance.BorderSize = 0;
             this.buttonReschedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReschedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonReschedule.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReschedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttonReschedule.Image = ((System.Drawing.Image)(resources.GetObject("buttonReschedule.Image")));
             this.buttonReschedule.Location = new System.Drawing.Point(521, 559);

@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\Downloads\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
@@ -44,7 +44,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,36 +59,42 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewDoctor.cs">
+    <Compile Include="Panels\EmployeeCRUD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddNewDoctor.Designer.cs">
+    <Compile Include="Panels\EmployeeCRUD.Designer.cs">
+      <DependentUpon>EmployeeCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\AddNewDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\AddNewDoctor.Designer.cs">
       <DependentUpon>AddNewDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminSidebarUserControl.cs">
+    <Compile Include="Panels\AdminSidebarUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AdminSidebarUserControl.Designer.cs">
+    <Compile Include="Panels\AdminSidebarUserControl.Designer.cs">
       <DependentUpon>AdminSidebarUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="BedAvailibilityUserControl.cs">
+    <Compile Include="Panels\BedAvailibilityUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BedAvailibilityUserControl.Designer.cs">
+    <Compile Include="Panels\BedAvailibilityUserControl.Designer.cs">
       <DependentUpon>BedAvailibilityUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bill.cs" />
+    <Compile Include="Model\Bill.cs" />
     <Compile Include="ControlClass.cs" />
-    <Compile Include="CovidUserControl.cs">
+    <Compile Include="Panels\CovidUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CovidUserControl.Designer.cs">
+    <Compile Include="Panels\CovidUserControl.Designer.cs">
       <DependentUpon>CovidUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRUDDoctor.cs">
+    <Compile Include="Panels\CRUDDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CRUDDoctor.Designer.cs">
+    <Compile Include="Panels\CRUDDoctor.Designer.cs">
       <DependentUpon>CRUDDoctor.cs</DependentUpon>
     </Compile>
     <Compile Include="CrudEmployee.cs">
@@ -101,55 +109,55 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminHomeControl.cs">
+    <Compile Include="Panels\AdminHomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AdminHomeControl.Designer.cs">
+    <Compile Include="Panels\AdminHomeControl.Designer.cs">
       <DependentUpon>AdminHomeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseOps.cs" />
-    <Compile Include="DocAppointment.cs">
+    <Compile Include="Panels\DocAppointment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DocAppointment.Designer.cs">
+    <Compile Include="Panels\DocAppointment.Designer.cs">
       <DependentUpon>DocAppointment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctor.cs" />
-    <Compile Include="DoctorHomeUserControl.cs">
+    <Compile Include="Model\Doctor.cs" />
+    <Compile Include="Panels\DoctorHomeUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DoctorHomeUserControl.Designer.cs">
+    <Compile Include="Panels\DoctorHomeUserControl.Designer.cs">
       <DependentUpon>DoctorHomeUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorsAppointmentUserControl.cs">
+    <Compile Include="Panels\DoctorsAppointmentUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DoctorsAppointmentUserControl.Designer.cs">
+    <Compile Include="Panels\DoctorsAppointmentUserControl.Designer.cs">
       <DependentUpon>DoctorsAppointmentUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorSidebarUserControl.cs">
+    <Compile Include="Panels\DoctorSidebarUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DoctorSidebarUserControl.Designer.cs">
+    <Compile Include="Panels\DoctorSidebarUserControl.Designer.cs">
       <DependentUpon>DoctorSidebarUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorsPatientListControl.cs">
+    <Compile Include="Panels\DoctorsPatientListControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DoctorsPatientListControl.Designer.cs">
+    <Compile Include="Panels\DoctorsPatientListControl.Designer.cs">
       <DependentUpon>DoctorsPatientListControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs" />
+    <Compile Include="Model\Employee.cs" />
     <Compile Include="FindRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FindRoom.Designer.cs">
       <DependentUpon>FindRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="InpatientUserControl.cs">
+    <Compile Include="Panels\InpatientUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InpatientUserControl.Designer.cs">
+    <Compile Include="Panels\InpatientUserControl.Designer.cs">
       <DependentUpon>InpatientUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="DoctorLogin.cs">
@@ -158,31 +166,31 @@
     <Compile Include="DoctorLogin.Designer.cs">
       <DependentUpon>DoctorLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs" />
-    <Compile Include="PatientCRUD.cs">
+    <Compile Include="Model\Patient.cs" />
+    <Compile Include="Panels\PatientCRUD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PatientCRUD.Designer.cs">
+    <Compile Include="Panels\PatientCRUD.Designer.cs">
       <DependentUpon>PatientCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientWindowUserControl.cs">
+    <Compile Include="Panels\PatientWindowUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PatientWindowUserControl.Designer.cs">
+    <Compile Include="Panels\PatientWindowUserControl.Designer.cs">
       <DependentUpon>PatientWindowUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs" />
-    <Compile Include="Room.cs" />
-    <Compile Include="RoomCRUD.cs">
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\Room.cs" />
+    <Compile Include="Panels\RoomCRUD.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RoomCRUD.Designer.cs">
+    <Compile Include="Panels\RoomCRUD.Designer.cs">
       <DependentUpon>RoomCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="SettingUserControl.cs">
+    <Compile Include="Panels\SettingUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SettingUserControl.Designer.cs">
+    <Compile Include="Panels\SettingUserControl.Designer.cs">
       <DependentUpon>SettingUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen.cs">
@@ -199,19 +207,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddNewDoctor.resx">
+    <EmbeddedResource Include="Panels\EmployeeCRUD.resx">
+      <DependentUpon>EmployeeCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\AddNewDoctor.resx">
       <DependentUpon>AddNewDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminSidebarUserControl.resx">
+    <EmbeddedResource Include="Panels\AdminSidebarUserControl.resx">
       <DependentUpon>AdminSidebarUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BedAvailibilityUserControl.resx">
+    <EmbeddedResource Include="Panels\BedAvailibilityUserControl.resx">
       <DependentUpon>BedAvailibilityUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CovidUserControl.resx">
+    <EmbeddedResource Include="Panels\CovidUserControl.resx">
       <DependentUpon>CovidUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRUDDoctor.resx">
+    <EmbeddedResource Include="Panels\CRUDDoctor.resx">
       <DependentUpon>CRUDDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudEmployee.resx">
@@ -220,43 +231,43 @@
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminHomeControl.resx">
+    <EmbeddedResource Include="Panels\AdminHomeControl.resx">
       <DependentUpon>AdminHomeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocAppointment.resx">
+    <EmbeddedResource Include="Panels\DocAppointment.resx">
       <DependentUpon>DocAppointment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorHomeUserControl.resx">
+    <EmbeddedResource Include="Panels\DoctorHomeUserControl.resx">
       <DependentUpon>DoctorHomeUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorsAppointmentUserControl.resx">
+    <EmbeddedResource Include="Panels\DoctorsAppointmentUserControl.resx">
       <DependentUpon>DoctorsAppointmentUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorSidebarUserControl.resx">
+    <EmbeddedResource Include="Panels\DoctorSidebarUserControl.resx">
       <DependentUpon>DoctorSidebarUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorsPatientListControl.resx">
+    <EmbeddedResource Include="Panels\DoctorsPatientListControl.resx">
       <DependentUpon>DoctorsPatientListControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindRoom.resx">
       <DependentUpon>FindRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InpatientUserControl.resx">
+    <EmbeddedResource Include="Panels\InpatientUserControl.resx">
       <DependentUpon>InpatientUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorLogin.resx">
       <DependentUpon>DoctorLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientCRUD.resx">
+    <EmbeddedResource Include="Panels\PatientCRUD.resx">
       <DependentUpon>PatientCRUD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientWindowUserControl.resx">
+    <EmbeddedResource Include="Panels\PatientWindowUserControl.resx">
       <DependentUpon>PatientWindowUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomCRUD.resx">
+    <EmbeddedResource Include="Panels\RoomCRUD.resx">
       <DependentUpon>RoomCRUD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingUserControl.resx">
+    <EmbeddedResource Include="Panels\SettingUserControl.resx">
       <DependentUpon>SettingUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
@@ -288,5 +299,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorHomeUserControl));
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -40,6 +41,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.Content = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -50,11 +52,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Raleway", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(100, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 39);
+            this.label6.Size = new System.Drawing.Size(185, 32);
             this.label6.TabIndex = 1;
             this.label6.Text = "Patients Info";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,7 +74,7 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.panel11.BackColor = System.Drawing.Color.Teal;
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel11.Location = new System.Drawing.Point(2, 305);
             this.panel11.Name = "panel11";
@@ -81,7 +83,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.panel12.BackColor = System.Drawing.Color.Teal;
             this.panel12.Controls.Add(this.label6);
             this.panel12.Controls.Add(this.pictureBox6);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
@@ -94,7 +96,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.Location = new System.Drawing.Point(-396, 85);
@@ -108,9 +110,9 @@
             // 
             // buttonAppointments
             // 
-            this.buttonAppointments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttonAppointments.BackColor = System.Drawing.Color.Teal;
             this.buttonAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAppointments.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold);
+            this.buttonAppointments.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.buttonAppointments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttonAppointments.Image = ((System.Drawing.Image)(resources.GetObject("buttonAppointments.Image")));
             this.buttonAppointments.Location = new System.Drawing.Point(12, 115);
@@ -125,9 +127,9 @@
             // 
             // buttondoctorspatient
             // 
-            this.buttondoctorspatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttondoctorspatient.BackColor = System.Drawing.Color.Teal;
             this.buttondoctorspatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttondoctorspatient.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold);
+            this.buttondoctorspatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.buttondoctorspatient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttondoctorspatient.Image = ((System.Drawing.Image)(resources.GetObject("buttondoctorspatient.Image")));
             this.buttondoctorspatient.Location = new System.Drawing.Point(12, 52);
@@ -142,7 +144,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.panel7.BackColor = System.Drawing.Color.Teal;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.panel11);
@@ -155,7 +157,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.button5);
             this.panel8.Controls.Add(this.buttonAppointments);
             this.panel8.Controls.Add(this.buttondoctorspatient);
@@ -168,25 +170,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
-            this.label2.Location = new System.Drawing.Point(468, 31);
+            this.label2.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(494, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(375, 55);
+            this.label2.Size = new System.Drawing.Size(289, 36);
             this.label2.TabIndex = 1;
             this.label2.Text = "Doctor Dashboard";
             // 
             // Content
             // 
-            this.Content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.Content.BackColor = System.Drawing.Color.White;
             this.Content.Controls.Add(this.label2);
             this.Content.Controls.Add(this.panel7);
             this.Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Content.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Content.Location = new System.Drawing.Point(0, 0);
             this.Content.Name = "Content";
             this.Content.Size = new System.Drawing.Size(1261, 550);
             this.Content.TabIndex = 2;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel7;
             // 
             // DoctorHomeUserControl
             // 
@@ -217,5 +223,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel Content;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

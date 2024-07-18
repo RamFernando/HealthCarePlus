@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientCRUD));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonDisplay = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -383,7 +385,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.emailt);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.employeeid);
@@ -411,6 +413,7 @@
             this.panel1.Controls.Add(this.label20);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1261, 550);
@@ -419,70 +422,94 @@
             // 
             // emailt
             // 
-            this.emailt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.emailt.BackColor = System.Drawing.Color.Gainsboro;
             this.emailt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emailt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.emailt.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailt.Location = new System.Drawing.Point(511, 56);
             this.emailt.Name = "emailt";
-            this.emailt.Size = new System.Drawing.Size(181, 27);
+            this.emailt.Size = new System.Drawing.Size(181, 25);
             this.emailt.TabIndex = 16;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label13.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(383, 54);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(95, 29);
+            this.label13.Size = new System.Drawing.Size(84, 25);
             this.label13.TabIndex = 15;
             this.label13.Text = "EMAIL:";
             // 
             // employeeid
             // 
-            this.employeeid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.employeeid.BackColor = System.Drawing.Color.Gainsboro;
             this.employeeid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.employeeid.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.employeeid.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeid.Location = new System.Drawing.Point(243, 172);
             this.employeeid.Name = "employeeid";
-            this.employeeid.Size = new System.Drawing.Size(449, 29);
+            this.employeeid.Size = new System.Drawing.Size(449, 25);
             this.employeeid.TabIndex = 14;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(243, 212);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(449, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(449, 32);
             this.dateTimePicker1.TabIndex = 13;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 40;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 312);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeight = 40;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(29, 312);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowHeadersWidth = 50;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1201, 216);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
@@ -491,25 +518,25 @@
             // 
             this.comboBoxSearchBy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxSearchBy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxSearchBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxSearchBy.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxSearchBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSearchBy.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.comboBoxSearchBy.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSearchBy.FormattingEnabled = true;
             this.comboBoxSearchBy.Items.AddRange(new object[] {
             "Patient Name",
             "Patient Number"});
-            this.comboBoxSearchBy.Location = new System.Drawing.Point(860, 217);
+            this.comboBoxSearchBy.Location = new System.Drawing.Point(876, 217);
             this.comboBoxSearchBy.Name = "comboBoxSearchBy";
-            this.comboBoxSearchBy.Size = new System.Drawing.Size(370, 38);
+            this.comboBoxSearchBy.Size = new System.Drawing.Size(324, 34);
             this.comboBoxSearchBy.TabIndex = 3;
             // 
             // comboBoxPATGender
             // 
             this.comboBoxPATGender.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxPATGender.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBoxPATGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.comboBoxPATGender.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxPATGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxPATGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBoxPATGender.Font = new System.Drawing.Font("Verdana", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPATGender.FormattingEnabled = true;
             this.comboBoxPATGender.Items.AddRange(new object[] {
             "Female",
@@ -517,14 +544,14 @@
             "Other"});
             this.comboBoxPATGender.Location = new System.Drawing.Point(511, 92);
             this.comboBoxPATGender.Name = "comboBoxPATGender";
-            this.comboBoxPATGender.Size = new System.Drawing.Size(181, 33);
+            this.comboBoxPATGender.Size = new System.Drawing.Size(181, 34);
             this.comboBoxPATGender.TabIndex = 3;
             // 
             // buttonPATUpdate
             // 
-            this.buttonPATUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttonPATUpdate.BackColor = System.Drawing.Color.Teal;
             this.buttonPATUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPATUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonPATUpdate.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPATUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttonPATUpdate.Image = ((System.Drawing.Image)(resources.GetObject("buttonPATUpdate.Image")));
             this.buttonPATUpdate.Location = new System.Drawing.Point(706, 144);
@@ -539,9 +566,9 @@
             // 
             // buttonPATDelete
             // 
-            this.buttonPATDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttonPATDelete.BackColor = System.Drawing.Color.Teal;
             this.buttonPATDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPATDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonPATDelete.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPATDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttonPATDelete.Image = ((System.Drawing.Image)(resources.GetObject("buttonPATDelete.Image")));
             this.buttonPATDelete.Location = new System.Drawing.Point(971, 92);
@@ -556,9 +583,9 @@
             // 
             // buttonPATInsert
             // 
-            this.buttonPATInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.buttonPATInsert.BackColor = System.Drawing.Color.Teal;
             this.buttonPATInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPATInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonPATInsert.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPATInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
             this.buttonPATInsert.Image = ((System.Drawing.Image)(resources.GetObject("buttonPATInsert.Image")));
             this.buttonPATInsert.Location = new System.Drawing.Point(706, 92);
@@ -573,164 +600,164 @@
             // 
             // textBoxSearchVal
             // 
-            this.textBoxSearchVal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxSearchVal.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxSearchVal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSearchVal.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.textBoxSearchVal.Location = new System.Drawing.Point(906, 266);
+            this.textBoxSearchVal.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchVal.Location = new System.Drawing.Point(876, 266);
             this.textBoxSearchVal.Name = "textBoxSearchVal";
-            this.textBoxSearchVal.Size = new System.Drawing.Size(324, 29);
+            this.textBoxSearchVal.Size = new System.Drawing.Size(324, 25);
             this.textBoxSearchVal.TabIndex = 6;
             this.textBoxSearchVal.TextChanged += new System.EventHandler(this.textBoxSearchVal_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label10.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(67, 212);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 29);
+            this.label10.Size = new System.Drawing.Size(66, 25);
             this.label10.TabIndex = 0;
             this.label10.Text = "DOB:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label11.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(67, 173);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(142, 29);
+            this.label11.Size = new System.Drawing.Size(126, 25);
             this.label11.TabIndex = 0;
             this.label11.Text = "CreatedBy:";
             // 
             // textBoxPATAddress
             // 
-            this.textBoxPATAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxPATAddress.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxPATAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPATAddress.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.textBoxPATAddress.Location = new System.Drawing.Point(243, 251);
+            this.textBoxPATAddress.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPATAddress.Location = new System.Drawing.Point(243, 258);
             this.textBoxPATAddress.Multiline = true;
             this.textBoxPATAddress.Name = "textBoxPATAddress";
-            this.textBoxPATAddress.Size = new System.Drawing.Size(449, 48);
+            this.textBoxPATAddress.Size = new System.Drawing.Size(449, 28);
             this.textBoxPATAddress.TabIndex = 7;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(67, 258);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(141, 29);
+            this.label12.Size = new System.Drawing.Size(120, 25);
             this.label12.TabIndex = 0;
             this.label12.Text = "ADDRESS:";
             // 
             // textBoxPATTel
             // 
-            this.textBoxPATTel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxPATTel.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxPATTel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPATTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.textBoxPATTel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPATTel.Location = new System.Drawing.Point(511, 134);
             this.textBoxPATTel.Name = "textBoxPATTel";
-            this.textBoxPATTel.Size = new System.Drawing.Size(181, 27);
+            this.textBoxPATTel.Size = new System.Drawing.Size(181, 25);
             this.textBoxPATTel.TabIndex = 4;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label14.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(383, 131);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(114, 29);
+            this.label14.Size = new System.Drawing.Size(95, 25);
             this.label14.TabIndex = 0;
             this.label14.Text = "TEL NO:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label15.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(383, 93);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 29);
+            this.label15.Size = new System.Drawing.Size(107, 25);
             this.label15.TabIndex = 0;
             this.label15.Text = "GENDER:";
             // 
             // textBoxPATName
             // 
-            this.textBoxPATName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxPATName.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxPATName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPATName.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.textBoxPATName.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPATName.Location = new System.Drawing.Point(243, 134);
             this.textBoxPATName.Name = "textBoxPATName";
-            this.textBoxPATName.Size = new System.Drawing.Size(123, 29);
+            this.textBoxPATName.Size = new System.Drawing.Size(123, 25);
             this.textBoxPATName.TabIndex = 1;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label16.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(67, 131);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 29);
+            this.label16.Size = new System.Drawing.Size(80, 25);
             this.label16.TabIndex = 0;
             this.label16.Text = "NAME:";
             // 
             // textBoxPATID
             // 
-            this.textBoxPATID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.textBoxPATID.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxPATID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPATID.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.textBoxPATID.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPATID.Location = new System.Drawing.Point(243, 96);
             this.textBoxPATID.Name = "textBoxPATID";
             this.textBoxPATID.ReadOnly = true;
-            this.textBoxPATID.Size = new System.Drawing.Size(123, 29);
+            this.textBoxPATID.Size = new System.Drawing.Size(123, 25);
             this.textBoxPATID.TabIndex = 0;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(702, 221);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(128, 30);
+            this.label17.Size = new System.Drawing.Size(114, 28);
             this.label17.TabIndex = 0;
             this.label17.Text = "SEARCH BY:";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(702, 265);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(167, 30);
+            this.label18.Size = new System.Drawing.Size(150, 28);
             this.label18.TabIndex = 0;
             this.label18.Text = "SEARCH VALUE:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label19.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(67, 93);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(162, 29);
+            this.label19.Size = new System.Drawing.Size(136, 25);
             this.label19.TabIndex = 0;
             this.label19.Text = "PATIENT ID:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(171)))), ((int)(((byte)(226)))));
+            this.label20.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(19, 20);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(195, 46);
+            this.label20.Size = new System.Drawing.Size(189, 48);
             this.label20.TabIndex = 1;
             this.label20.Text = "PATIENT";
             // 

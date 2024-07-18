@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.labelTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -39,19 +40,23 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelLoginTitle = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(249)))));
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(146)))), ((int)(((byte)(155)))));
-            this.labelTitle.Location = new System.Drawing.Point(70, 41);
+            this.labelTitle.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.Black;
+            this.labelTitle.Location = new System.Drawing.Point(94, 43);
             this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(312, 36);
+            this.labelTitle.Size = new System.Drawing.Size(316, 36);
             this.labelTitle.TabIndex = 4;
             this.labelTitle.Text = "HEALTH CARE PLUS";
             // 
@@ -66,7 +71,7 @@
             this.panel1.Controls.Add(this.labelPassword);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.labelLoginTitle);
-            this.panel1.Location = new System.Drawing.Point(12, 137);
+            this.panel1.Location = new System.Drawing.Point(603, 177);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(578, 311);
             this.panel1.TabIndex = 5;
@@ -75,9 +80,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(249)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(146)))), ((int)(((byte)(155)))));
-            this.label3.Location = new System.Drawing.Point(214, 200);
+            this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(221, 210);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 20);
@@ -87,9 +92,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Ivory;
+            this.button1.BackColor = System.Drawing.Color.Teal;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
             this.button1.Location = new System.Drawing.Point(138, 233);
             this.button1.Name = "button1";
@@ -101,37 +106,37 @@
             // 
             // textBoxPass
             // 
-            this.textBoxPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.textBoxPass.BackColor = System.Drawing.Color.White;
             this.textBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPass.ForeColor = System.Drawing.Color.White;
+            this.textBoxPass.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPass.ForeColor = System.Drawing.Color.Black;
             this.textBoxPass.Location = new System.Drawing.Point(163, 142);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.PasswordChar = '*';
-            this.textBoxPass.Size = new System.Drawing.Size(310, 30);
+            this.textBoxPass.Size = new System.Drawing.Size(310, 32);
             this.textBoxPass.TabIndex = 2;
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.textBoxUsername.BackColor = System.Drawing.Color.White;
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.ForeColor = System.Drawing.Color.White;
+            this.textBoxUsername.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.Black;
             this.textBoxUsername.Location = new System.Drawing.Point(163, 86);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(310, 30);
+            this.textBoxUsername.Size = new System.Drawing.Size(310, 32);
             this.textBoxUsername.TabIndex = 1;
             // 
             // textboxError
             // 
             this.textboxError.AutoSize = true;
             this.textboxError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(249)))));
-            this.textboxError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxError.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.textboxError.Location = new System.Drawing.Point(140, 280);
+            this.textboxError.Location = new System.Drawing.Point(159, 280);
             this.textboxError.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.textboxError.Name = "textboxError";
-            this.textboxError.Size = new System.Drawing.Size(298, 20);
+            this.textboxError.Size = new System.Drawing.Size(306, 20);
             this.textboxError.TabIndex = 3;
             this.textboxError.Text = "Please Enter Required Information";
             this.textboxError.Visible = false;
@@ -140,12 +145,12 @@
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(249)))));
-            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(146)))), ((int)(((byte)(155)))));
+            this.labelPassword.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.ForeColor = System.Drawing.Color.Black;
             this.labelPassword.Location = new System.Drawing.Point(38, 142);
             this.labelPassword.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(91, 20);
+            this.labelPassword.Size = new System.Drawing.Size(89, 20);
             this.labelPassword.TabIndex = 0;
             this.labelPassword.Text = "Password";
             this.labelPassword.Click += new System.EventHandler(this.labelPassword_Click);
@@ -154,12 +159,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(249)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(146)))), ((int)(((byte)(155)))));
+            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(38, 86);
             this.label2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 20);
+            this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Email";
             // 
@@ -167,24 +172,51 @@
             // 
             this.labelLoginTitle.AutoSize = true;
             this.labelLoginTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(249)))));
-            this.labelLoginTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoginTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(146)))), ((int)(((byte)(155)))));
-            this.labelLoginTitle.Location = new System.Drawing.Point(182, 12);
+            this.labelLoginTitle.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoginTitle.ForeColor = System.Drawing.Color.Black;
+            this.labelLoginTitle.Location = new System.Drawing.Point(203, 12);
             this.labelLoginTitle.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.labelLoginTitle.Name = "labelLoginTitle";
-            this.labelLoginTitle.Size = new System.Drawing.Size(188, 29);
+            this.labelLoginTitle.Size = new System.Drawing.Size(195, 28);
             this.labelLoginTitle.TabIndex = 0;
             this.labelLoginTitle.Text = "Employee Login";
             this.labelLoginTitle.Click += new System.EventHandler(this.labelLoginTitle_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Teal;
+            this.guna2Panel1.Controls.Add(this.labelTitle);
+            this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(452, 690);
+            this.guna2Panel1.TabIndex = 6;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(0, 3);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(126, 119);
+            this.guna2ImageButton1.TabIndex = 5;
+            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1362, 689);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.guna2Panel1);
+            this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -192,8 +224,9 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -208,5 +241,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label textboxError;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

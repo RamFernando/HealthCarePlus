@@ -39,7 +39,7 @@
             // buttonDoctor
             // 
             this.buttonDoctor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonDoctor.BackColor = System.Drawing.Color.Teal;
             this.buttonDoctor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDoctor.BackgroundImage")));
             this.buttonDoctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDoctor.FlatAppearance.BorderSize = 0;
@@ -54,7 +54,7 @@
             // 
             // SideBar
             // 
-            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.SideBar.BackColor = System.Drawing.Color.Teal;
             this.SideBar.Controls.Add(this.buttonCovid);
             this.SideBar.Controls.Add(this.buttonDoctor);
             this.SideBar.Controls.Add(this.buttonPatient);
@@ -67,7 +67,7 @@
             // buttonCovid
             // 
             this.buttonCovid.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonCovid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonCovid.BackColor = System.Drawing.Color.Teal;
             this.buttonCovid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCovid.BackgroundImage")));
             this.buttonCovid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonCovid.FlatAppearance.BorderSize = 0;
@@ -83,7 +83,7 @@
             // buttonPatient
             // 
             this.buttonPatient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(41)))));
+            this.buttonPatient.BackColor = System.Drawing.Color.Teal;
             this.buttonPatient.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPatient.BackgroundImage")));
             this.buttonPatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonPatient.FlatAppearance.BorderSize = 0;

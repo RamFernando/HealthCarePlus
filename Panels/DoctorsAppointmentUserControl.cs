@@ -12,14 +12,14 @@ namespace OOP_Project___Hospital_Management_System
 {
     public partial class DoctorsAppointmentUserControl : UserControl
     {
+        public string ID { get; set; }
+
         public DoctorsAppointmentUserControl()
         {
             InitializeComponent();
-           dateTimePicker1.Value = DateTime.Today;
+            dateTimePicker1.Value = DateTime.Today;
 
         }
-
-        public string ID { get; set; }
 
         public void display()
         {
@@ -151,7 +151,8 @@ namespace OOP_Project___Hospital_Management_System
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            DatabaseOps databaseOps = new DatabaseOps();
+            dataGridViewINP.DataSource = databaseOps.searchAppointment(textBox1.Text, comboBoxSearchBy.Text);
         }
 
         private void textBoxTel_TextChanged(object sender, EventArgs e)
@@ -206,7 +207,7 @@ namespace OOP_Project___Hospital_Management_System
 
         private void comboBoxSearchBy_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label15_Click(object sender, EventArgs e)

@@ -50,9 +50,12 @@ namespace OOP_Project___Hospital_Management_System
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CrudEmployee emp = new CrudEmployee();
-            emp.Show();
-            this.Hide();
+            //CrudEmployee emp = new CrudEmployee();
+            //emp.Show();
+            //this.Hide();
+
+            EmployeeCRUD employeeCRUD = new EmployeeCRUD();
+            ControlClass.ShowControl(employeeCRUD, Content);
         }
 
         private void buttonAppointments_Click(object sender, EventArgs e)
